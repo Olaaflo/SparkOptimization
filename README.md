@@ -12,12 +12,12 @@ The notebooks were developed in the ETL platform Databricks.
 
 Script  | Description
 ------------- | ------------- 
-[EventLogToDelta.ipynb](https://github.com/havardMoe/Twitter_Sentiment/blob/c5bbb9a0e545c8305d869071e505ab6a631d7ca3/scripts/fetch_twitter_data.py)  | Fetches data from the Twitter API with tweepy
-[RawDataToOrganized.ipynb](https://github.com/havardMoe/Twitter_Sentiment/blob/c5bbb9a0e545c8305d869071e505ab6a631d7ca3/scripts/load_data_to_hdfs.sh)  | Used to load data from namenode into HDFS.
-[RuleBased_count.ipynb](https://github.com/havardMoe/Twitter_Sentiment/blob/c5bbb9a0e545c8305d869071e505ab6a631d7ca3/scripts/spark_set_up_raw_data.py)  | Set up raw data table in Hive and write in data.
-[RuleBased_runTimeWeightedCounts.ipynb](https://github.com/havardMoe/Twitter_Sentiment/blob/f9253edb3affe3b40b68b7796c474d6c8e1bea88/scripts/set_up_hiveDB.sql)  | Old file used to set up HiveDB directly in Hive.
-[RuleBased_stepWeights.ipynb](https://github.com/havardMoe/Twitter_Sentiment/blob/c5bbb9a0e545c8305d869071e505ab6a631d7ca3/code/preprocessing/preprocessing.py)  | Used to clean the data.
-[RuleBased_weightedCount.ipynb](https://github.com/havardMoe/Twitter_Sentiment/blob/c5bbb9a0e545c8305d869071e505ab6a631d7ca3/code/preprocessing/preproc_functions.py)  | Functions used for preprocessing.
-[SetupTables.ipynb](https://github.com/havardMoe/Twitter_Sentiment/blob/f9253edb3affe3b40b68b7796c474d6c8e1bea88/code/analysis/daily_wordlist_DF.py)  | Benchmark using MapReduce job on Spark DF.
-[StatisticsCalc.ipynb](https://github.com/havardMoe/Twitter_Sentiment/blob/f9253edb3affe3b40b68b7796c474d6c8e1bea88/code/analysis/daily_wordlist_MR.py)  | Benchmark using MapReduce job on Spark RDD.
+[EventLogToDelta.ipynb](EventLogToDelta.ipynb)  | Loads data from Spark event log files into a table. 
+[RawDataToOrganized.ipynb](RawDataToOrganized.ipynb)  | Structures the events into rows and parses and extracts event log information to create a operations and queries table.  
+[RuleBased_count.ipynb](RuleBased_count.ipynb)  | Code for 'Simple Count' method. 
+[RuleBased_runTimeWeightedCounts.ipynb](RuleBased_runTimeWeightedCounts.ipynb)  | Code for Run Time Weights method.
+[RuleBased_stepWeights.ipynb](RuleBased_stepWeights.ipynb)  | Code for Timestamp Weights method.
+[RuleBased_weightedCount.ipynb](RuleBased_weightedCount.ipynb)  | Code for Discrete Timestamp Weights method.
+[SetupTables.ipynb](SetupTables.ipynb)  | Sets up tables to be used.
+[StatisticsCalc.ipynb](StatisticsCalc.ipynb)  | Notebook for createing statistics.
 [Validators.ipynb](https://github.com/havardMoe/Twitter_Sentiment/blob/f9253edb3affe3b40b68b7796c474d6c8e1bea88/code/analysis/analysis.py)  | Contains functions and classes used for analysis.
