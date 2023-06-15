@@ -4,7 +4,7 @@ Master Thesis Title:
 
 
 This repository contains notebooks utilized in the master thesis.   
-The notebooks were developed in the ETL platform Databricks.
+The notebooks were developed in the ETL platform Databricks, so the Workflows binding the notebooks together are not available here.
 
 
 <a name="desc"></a>
